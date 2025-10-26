@@ -1,0 +1,18 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-
+Exercise name = Bench Press
+One rep max = 279.0
+Entered Reps = 8
+Entered Reps weight = 225.0
+-=-=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-
+Exercise name = Squat
+One rep max = 354.0
+Entered Reps = 5
+Entered Reps weight = 315.0
+-=-=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-
+Exercise name = Deadlift
+One rep max = 365.0
+Entered Reps = 1
+Entered Reps weight = 365.0
+-=-=-=-=-=-=-=-=-=-=-=-=-
