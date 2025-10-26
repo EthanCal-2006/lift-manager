@@ -21,4 +21,12 @@ public class Split {
     public double getEightyPercentMax() { return eightyPercentMax; }
     public double getSixtyPercentMax() { return sixtyPercentMax; }
     public double getFortyPercentMax() { return fortyPercentMax; }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "%s → 80%%: %.1f kg, 60%%: %.1f kg, 40%%: %.1f kg",
+                lift.getExerciseName(), eightyPercentMax, sixtyPercentMax, fortyPercentMax
+        );
+    }
 }

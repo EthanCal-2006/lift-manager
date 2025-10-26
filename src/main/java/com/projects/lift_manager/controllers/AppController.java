@@ -3,6 +3,7 @@ package com.projects.lift_manager.controllers;
 import com.projects.lift_manager.models.Lift;
 import com.projects.lift_manager.services.LiftManager;
 import com.projects.lift_manager.services.SplitManager;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -10,10 +11,16 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class AppController {
 
-    private final LiftManager liftManager = new LiftManager();
-    private final SplitManager splitManager = new SplitManager();
-    private final String FILE_PATH = "Lifts.txt"; // saves in app root
+    private final LiftManager liftManager;
+    private final SplitManager splitManager;
+    @Value("${lift.file.path}")
+    private String filePath;
+    // saves in app root
 
+    public AppController(LiftManager liftManager, SplitManager splitManager) {
+        this.liftManager = liftManager;
+        this.splitManager = splitManager;
+    }
     @GetMapping("/")
     public String index() {
         return "index";
@@ -34,7 +41,8 @@ public class AppController {
 
     @PostMapping("/lifts/remove")
     public String removeLift(@RequestParam int index) {
-        liftManager.removeLift(index);
+        // subtract 1 to convert 1-based user input to 0-based list index
+        liftManager.removeLift(index); // index is 1-based
         return "redirect:/lifts";
     }
 

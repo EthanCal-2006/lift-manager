@@ -28,21 +28,10 @@ public class LiftManager {
 
     public void addLift(Lift lift) {lifts.add(lift);}
 
-    public void removeLift(int index) {
-        if (index >= 1 && index <= lifts.size()) {
-            lifts.remove(index - 1);
-        }
-    }
-
-    public void moveLiftUp(int index) {
-        if (index > 0 && index < lifts.size()) {
-            Collections.swap(lifts, index, index - 1);
-        }
-    }
-
-    public void moveLiftDown(int index) {
-        if (index >= 0 && index < lifts.size() - 1) {
-            Collections.swap(lifts, index, index + 1);
+    public void removeLift(int userIndex) {
+        int idx = userIndex - 1; // convert to 0-based
+        if (idx >= 0 && idx < lifts.size()) {
+            lifts.remove(idx);
         }
     }
 

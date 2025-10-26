@@ -15,9 +15,9 @@
                 <div class="card-body">
                     <h4 class="card-title text-primary" th:text="'Split for ' + ${split.lift.exerciseName}"></h4>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item" th:text="'1 set of ' + ${split.fortyPercentMax} + ' lbs for 10 reps (warmup)'"></li>
-                        <li class="list-group-item" th:text="'2 sets of ' + ${split.sixtyPercentMax} + ' lbs for 12 reps'"></li>
-                        <li class="list-group-item" th:text="'2 sets of ' + ${split.eightyPercentMax} + ' lbs for 8 reps'"></li>
+                        <li class="list-group-item" th:text="'1 set of ' + ${#numbers.formatInteger(split.fortyPercentMax, 0)} + ' lbs for 10 reps (warmup)'"></li>
+                        <li class="list-group-item" th:text="'2 sets of ' + ${#numbers.formatInteger(split.fortyPercentMax, 0)} + ' lbs for 12 reps'"></li>
+                        <li class="list-group-item" th:text="'2 sets of ' + ${#numbers.formatInteger(split.eightyPercentMax, 0)} + ' lbs for 8 reps'"></li>
                     </ul>
                 </div>
             </div>

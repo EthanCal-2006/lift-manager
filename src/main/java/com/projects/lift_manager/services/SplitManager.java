@@ -2,9 +2,12 @@ package com.projects.lift_manager.services;
 
 import com.projects.lift_manager.models.Lift;
 import com.projects.lift_manager.models.Split;
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class SplitManager {
     private List<Split> splitList = new ArrayList<>();
 
