@@ -21,14 +21,14 @@ public class AppController {
 
     @GetMapping("/lifts")
     public String showLifts(Model model) {
-        model.addAttribute("lifts", liftManager.getLiftList());
+        model.addAttribute("lifts", liftManager.getLifts());
         return "lifts";
     }
 
     @PostMapping("/lifts/add")
     public String addLift(@RequestParam String name, @RequestParam double weight, @RequestParam int reps) {
         Lift newLift = new Lift(reps, weight, name);
-        liftManager.addNewLift(newLift);
+        liftManager.addLift(newLift);
         return "redirect:/lifts";
     }
 
@@ -40,19 +40,19 @@ public class AppController {
 
     @PostMapping("/lifts/save")
     public String saveLifts() {
-        liftManager.saveToFile(FILE_PATH);
+        liftManager.saveLifts();
         return "redirect:/lifts";
     }
 
     @PostMapping("/lifts/load")
     public String loadLifts() {
-        liftManager.loadFromFile(FILE_PATH);
+        liftManager.loadLifts();
         return "redirect:/lifts";
     }
 
     @GetMapping("/splits")
     public String showSplits(Model model) {
-        splitManager.createSplitList(liftManager.getLiftList());
+        splitManager.createSplitList(liftManager.getLifts());
         model.addAttribute("splits", splitManager.getSplitList());
         return "splits";
     }

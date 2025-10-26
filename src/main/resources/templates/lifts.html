@@ -9,6 +9,8 @@
 
     <h1 class="mb-4 text-center text-primary">Your Current Lifts</h1>
 
+    <h4 class="text-center">Enter weight and reps of your best set for one movement each:</h4>
+
     <table class="table table-striped table-bordered shadow-sm">
         <thead class="table-dark">
         <tr>
@@ -17,6 +19,7 @@
             <th>Reps</th>
             <th>Weight (lbs)</th>
             <th>1RM</th>
+            <th>Actions</th>
         </tr>
         </thead>
         <tbody>
@@ -24,11 +27,21 @@
             <td th:text="${i.index + 1}"></td>
             <td th:text="${lift.exerciseName}"></td>
             <td th:text="${lift.reps}"></td>
-            <td th:text="${lift.repsWeight}"></td>
-            <td th:text="${lift.oneRM}"></td>
+            <td th:text="${#numbers.formatInteger(lift.repsWeight, 0)}"></td>
+            <td th:text="${#numbers.formatInteger(lift.oneRM, 0)}"></td>
+            <td>
+                <form method="post" action="/lifts/remove" style="display: inline;">
+                    <input type="hidden" name="index" th:value="${i.index + 1}" />
+                    <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                </form>
+            </td>
         </tr>
         </tbody>
     </table>
+
+    <p class="text-center text-muted small mt-2">
+        <em>Note: One-Rep Max (1RM) is estimated using the Brzycki formula.</em>
+    </p>
 
     <div class="row mt-5">
         <div class="col-md-6">

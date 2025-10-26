@@ -1,18 +1,66 @@
 -=-=-=-=-=-=-=-=-=-=-=-=-
 Exercise name = Bench Press
-One rep max = 279.0
-Entered Reps = 8
-Entered Reps weight = 225.0
+One rep max = 152.0
+Entered Reps = 5
+Entered Reps weight = 135.0
 -=-=-=-=-=-=-=-=-=-=-=-=-
 -=-=-=-=-=-=-=-=-=-=-=-=-
 Exercise name = Squat
-One rep max = 354.0
+One rep max = 253.0
 Entered Reps = 5
-Entered Reps weight = 315.0
+Entered Reps weight = 225.0
 -=-=-=-=-=-=-=-=-=-=-=-=-
 -=-=-=-=-=-=-=-=-=-=-=-=-
 Exercise name = Deadlift
-One rep max = 365.0
-Entered Reps = 1
-Entered Reps weight = 365.0
+One rep max = 291.0
+Entered Reps = 3
+Entered Reps weight = 275.0
+-=-=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-
+Exercise name = Dumbell Curls
+One rep max = 31.0
+Entered Reps = 8
+Entered Reps weight = 25.0
+-=-=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-
+Exercise name = Lat Pulldown
+One rep max = 139.0
+Entered Reps = 6
+Entered Reps weight = 120.0
+-=-=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-
+Exercise name = Cable rows
+One rep max = 108.0
+Entered Reps = 7
+Entered Reps weight = 90.0
+-=-=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-
+Exercise name = Tricep pushdowns
+One rep max = 62.0
+Entered Reps = 8
+Entered Reps weight = 50.0
+-=-=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-
+Exercise name = Lateral raises
+One rep max = 20.0
+Entered Reps = 10
+Entered Reps weight = 15.0
+-=-=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-
+Exercise name = Quad extensions
+One rep max = 133.0
+Entered Reps = 10
+Entered Reps weight = 100.0
+-=-=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-
+Exercise name = Hamstring curls
+One rep max = 133.0
+Entered Reps = 10
+Entered Reps weight = 100.0
+-=-=-=-=-=-=-=-=-=-=-=-=-
+-=-=-=-=-=-=-=-=-=-=-=-=-
+Exercise name = Chest flies
+One rep max = 107.0
+Entered Reps = 10
+Entered Reps weight = 80.0
 -=-=-=-=-=-=-=-=-=-=-=-=-
